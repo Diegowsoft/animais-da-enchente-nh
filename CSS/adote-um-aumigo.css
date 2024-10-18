@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --blue: #cde8ff56;
+    --purple: #6F589C;
+    --yellow: #FEC35D;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cachorros {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.galeria {
+    flex-basis: 47%;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.galeria > img {
+    width: 100%;
+    display: block;
+}
+.detalhes {
+    flex-basis: 53%;
+    background-color: #fff;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.detalhes h1 {
+    color: var(--yellow);
+    text-shadow: 1px 1px 1px #b68735;
+    font-size: 2.1875rem;
+    font-weight: 600;
+}
+.detalhes h2 {
+    color: rgb(72, 196, 238);
+}
+.detalhes h3 {
+    color: var(--purple);
+
+}
+.detalhes button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28A745;
+    padding: 10px 20px;
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+}
+.detalhes button:hover {
+    background-color: #28a746ae;
+    transition-duration: .3s;
+}
